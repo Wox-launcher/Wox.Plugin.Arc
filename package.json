@@ -1,6 +1,6 @@
 {
   "name": "wox.plugin.arc",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "build": "pnpm clean && ncc build src/index.ts -o dist && babel dist --out-dir dist && cp -r images dist && cp -r plugin.json dist",
     "package": "pnpm build && cd dist && zip -r ../wox.plugin.arc.wox *.js *.json images",
@@ -24,7 +24,7 @@
     "typescript": "^5.2.2"
   },
   "dependencies": {
-    "@wox-launcher/wox-plugin": "^0.0.63",
+    "@wox-launcher/wox-plugin": "^0.0.66",
     "run-applescript": "^7.0.0"
   }
 }

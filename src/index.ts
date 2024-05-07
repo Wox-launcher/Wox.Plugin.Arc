@@ -24,6 +24,11 @@ export const plugin: Plugin = {
       return []
     }
 
+    // Only show the plugin when the user is in the Arc window in global mode
+    if (query.IsGlobalQuery() && query.Env.ActiveWindowTitle.toLowerCase() != "arc") {
+      return []
+    }
+
     return tabs.filter(o => o.title.toLowerCase().includes(query.Search.toLowerCase()) || o.url.toLowerCase().includes(query.Search.toLowerCase())).map(tab => {
       return {
         Title: tab.title,
