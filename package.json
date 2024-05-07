@@ -1,9 +1,9 @@
 {
-  "name": "replace_me_with_name",
+  "name": "wox.plugin.arc",
   "version": "0.0.1",
   "scripts": {
     "build": "pnpm clean && ncc build src/index.ts -o dist && babel dist --out-dir dist && cp -r images dist && cp -r plugin.json dist",
-    "package": "pnpm build && cd dist && zip -r ../replace_me_with_name.wox *.js *.json images",
+    "package": "pnpm build && cd dist && zip -r ../wox.plugin.arc.wox *.js *.json images",
     "dev": "nodemon --watch src --watch images --watch plugin.json --ext json,ts,js,mjs,png --exec pnpm run build",
     "clean": "node -e \"var { rmdirSync, existsSync } = require('fs'), path = require('path'); ['./dist'].forEach(fPath => {if (existsSync(path.join(__dirname, fPath))) rmdirSync(path.join(__dirname, fPath), { recursive: true })}); process.exit(0);\"",
     "clean:all": "pnpm run clean && (rm -r ./node_modules || true)",
@@ -24,6 +24,7 @@
     "typescript": "^5.2.2"
   },
   "dependencies": {
-    "@wox-launcher/wox-plugin": "^0.0.57"
+    "@wox-launcher/wox-plugin": "^0.0.63",
+    "run-applescript": "^7.0.0"
   }
 }

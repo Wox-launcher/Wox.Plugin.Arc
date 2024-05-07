@@ -1,20 +1,19 @@
 {
-  "Id": "[Id]",
+  "Id": "84cb8c8f-1156-489d-a490-6d04fbc85d52",
   "TriggerKeywords": [
-    "[Trigger Keyword]"
+    "*",
+    "arc"
   ],
-  "Name": "[Name]",
-  "Description": "[Description]",
-  "Author": "[Author Name]",
+  "Name": "Arc",
+  "Description": "Search arc tabs and spaces",
+  "Author": "Wox-team",
   "Version": "0.0.1",
   "MinWoxVersion": "2.0.0",
-  "Runtime": "[Runtime]",
-  "Website": "[Website]",
+  "Runtime": "nodejs",
+  "Website": "https://github.com/Wox-launcher/Wox.Plugin.Arc",
   "Entry": "index.js",
   "Icon": "relative:images/app.png",
   "SupportedOS": [
-    "windows",
-    "linux",
     "darwin"
   ]
 }

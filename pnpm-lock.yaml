@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@wox-launcher/wox-plugin':
-    specifier: ^0.0.57
-    version: 0.0.57
+    specifier: ^0.0.63
+    version: 0.0.63
 
 devDependencies:
   '@babel/cli':
@@ -43,6 +43,9 @@ devDependencies:
   prettier:
     specifier: 3.0.2
     version: 3.0.2
+  run-applescript:
+    specifier: ^7.0.0
+    version: 7.0.0
   typescript:
     specifier: ^5.2.2
     version: 5.2.2
@@ -1498,8 +1501,8 @@ packages:
     hasBin: true
     dev: true
 
-  /@wox-launcher/wox-plugin@0.0.57:
-    resolution: {integrity: sha512-58swqr298hv8tWMEpvq5T/kQ7mOmJ9PZ7xotCs5B3M+8FXzpxrfJW9u/6bTHUDECNpbl0yedrLL8YIAXsb2Qig==}
+  /@wox-launcher/wox-plugin@0.0.63:
+    resolution: {integrity: sha512-JHnI5DK2BPYC81DQ/u44xNz5FqBGRDk3/2AWXaMAy5/2HMy/yRz8AOost8PP4FskW0BhzlzjW6TL2YR68Cj1Qg==}
     dev: false
 
   /acorn-jsx@5.3.2(acorn@8.10.0):
@@ -2416,6 +2419,11 @@ packages:
     hasBin: true
     dependencies:
       glob: 7.2.3
+    dev: true
+
+  /run-applescript@7.0.0:
+    resolution: {integrity: sha512-9by4Ij99JUr/MCFBUkDKLWK3G9HVXmabKz9U5MlIAIuvuzkiOicRYs8XJLxX+xahD+mLiiCYDqF9dKAgtzKP1A==}
+    engines: {node: '>=18'}
     dev: true
 
   /run-parallel@1.2.0:

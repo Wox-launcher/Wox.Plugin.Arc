@@ -1,3 +1,7 @@
-# Wox.Plugin.Template.Nodejs
+# Wox.Plugin.Arc
 
-Plugin template for nodejs plugin
+A Wox plugin to search tabs of arc browser (only support macos).
+
+# How to Install
+
+Run `wpm install arc` in Wox.
