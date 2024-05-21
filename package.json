@@ -1,6 +1,6 @@
 {
   "name": "wox.plugin.arc",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "scripts": {
     "build": "pnpm clean && ncc build src/index.ts -o dist && babel dist --out-dir dist && cp -r images dist && cp -r plugin.json dist",
     "package": "pnpm build && cd dist && zip -r ../wox.plugin.arc.wox *.js *.json images",

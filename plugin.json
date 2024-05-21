@@ -7,7 +7,7 @@
   "Name": "Arc",
   "Description": "Search arc tabs and spaces",
   "Author": "Wox-team",
-  "Version": "0.0.2",
+  "Version": "0.0.3",
   "MinWoxVersion": "2.0.0",
   "Runtime": "nodejs",
   "Website": "https://github.com/Wox-launcher/Wox.Plugin.Arc",

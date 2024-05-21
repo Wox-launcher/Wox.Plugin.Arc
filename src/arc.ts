@@ -224,3 +224,12 @@ export async function getVersion() {
 
   return response
 }
+
+export async function isArcInstalled() {
+  try {
+    await getVersion()
+    return true
+  } catch (error) {
+    return false
+  }
+}

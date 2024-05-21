@@ -1,5 +1,5 @@
 import type { Context, Plugin, PluginInitParams, PublicAPI, Query, Result } from "@wox-launcher/wox-plugin"
-import { getTabs, selectTab } from "./arc"
+import { getTabs, isArcInstalled, selectTab } from "./arc"
 import { Tab } from "./types"
 
 let api: PublicAPI
@@ -10,12 +10,16 @@ export const plugin: Plugin = {
     api = initParams.API
 
     setInterval(async () => {
-      const openTabs = await getTabs()
-      if (openTabs == undefined) {
-        return
-      }
+      if (await isArcInstalled()) {
+        const openTabs = await getTabs()
+        if (openTabs == undefined) {
+          return
+        }
 
-      tabs = openTabs
+        tabs = openTabs
+      } else {
+        tabs = []
+      }
     }, 2000)
   },
 
